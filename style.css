@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  background-color: var(--background-color);
 }
 
 :root {
@@ -15,7 +16,6 @@ body {
 }
 
 .container {
-  background-color: var(--background-color);
   display: grid;
   place-items: center;
 
@@ -148,4 +148,11 @@ button {
   box-shadow: -8px 9px 13px -2px rgba(0, 0, 0, 0.44);
   -webkit-box-shadow: -8px 9px 13px -2px rgba(0, 0, 0, 0.44);
   -moz-box-shadow: -8px 9px 13px -2px rgba(0, 0, 0, 0.44);
+}
+/*Responsive*/
+
+@media (max-width: 425px) {
+  .form {
+    width: 150px;
+  }
 }
