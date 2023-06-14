@@ -8,9 +8,10 @@ body {
   --form-color1: #916cf9;
   --form-color2: #7a90f7;
   --colorbutton: #414280;
-  --optionIn: #f4f4ed;
+  --text: #f4f4ed;
   --sm: 14px;
-  --lg: 22px;
+  --lg: 18px;
+  --font: "Quicksand", sans-serif;
 }
 
 .container {
@@ -26,4 +27,69 @@ body {
   background-color: var(--form-color1);
   width: 450px;
   height: 550px;
+
+  border-radius: 4px;
+}
+
+.form {
+  display: grid;
+  place-items: center;
+
+  height: 90vh;
+}
+
+.username {
+  width: 400px;
+
+  font-family: var(--font);
+}
+
+.input-username {
+  width: 400px;
+  height: 60px;
+
+  margin-top: 8px;
+
+  border-radius: 4px;
+  border: none;
+}
+
+.password {
+  width: 400px;
+  font-family: var(--font);
+}
+
+.input-password {
+  width: 400px;
+  height: 60px;
+
+  margin-top: 8px;
+
+  border-radius: 4px;
+  border: none;
+}
+
+.login {
+  width: 410px;
+
+  padding-left: 14px;
+}
+
+label {
+  color: var(--text);
+}
+
+.button-login {
+  width: 400px;
+  height: 52px;
+
+  border-radius: 4px;
+  border: none;
+
+  font-family: var(--font);
+  font-size: var(--lg);
+  font-weight: bold;
+  color: var(--text);
+
+  background-color: var(--colorbutton);
 }
